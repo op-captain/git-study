@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <style>
+        @keyframes warn {
+            0% {
+                transform: scale(0);
+                opacity: 0.0;
+            }
+            25% {
+                transform: scale(0);
+                opacity: 0.1;
+            }
+            50% {
+                transform: scale(0.1);
+                opacity: 0.3;
+            }
+            75% {
+                transform: scale(0.5);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.0;
+            }
+        }
+        @-webkit-keyframes "warn" {
+            0% {
+                -webkit-transform: scale(0);
+                opacity: 0.0;
+            }
+            25% {
+                -webkit-transform: scale(0);
+                opacity: 0.1;
+            }
+            50% {
+                -webkit-transform: scale(0.1);
+                opacity: 0.3;
+            }
+            75% {
+                -webkit-transform: scale(0.5);
+                opacity: 0.5;
+            }
+            100% {
+                -webkit-transform: scale(1);
+                opacity: 0.0;
+            }
+        }
+
+        .container {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            border: 1px solid #000;
+        }
+        /* 保持大小不变的小圆圈  */
+        .dot {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            left: 0;
+            top: 0;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border: 2px solid red;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        /* 产生动画（向外扩散变大）的圆圈  */
+        .pulse {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            left: 0;
+            top: 0;
+            border: 6px solid red;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 50%;
+            z-index: 1;
+            opacity: 0;
+            -webkit-animation: warn 3s ease-out;
+            -moz-animation: warn 3s ease-out;
+            animation: warn 3s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        .page-left-logo{
+            position: absolute;
+            top: 0px;
+            left:-100px;
+
+        }
+        .page-right-logo{
+            position: absolute;
+            top: 0px;
+            right:-100px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="article-page-content">
+    <div id="article_content">
+        <div class="zrzc-wrap">
+            <div class="directorWrap">
+                <div class="zrzc-item director">
+                    <div class="avator">
+                        <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/zhengming.png" alt="">
+                    </div>
+                    <div class="info-wrap">
+                        <div class="name-depudy-wrap">
+                            <span class="name">郑&nbsp;&nbsp;明</span><span class="depudy">主任</span>
+                        </div>
+                        <div class="info-item">
+                            <p class="labels">分管工作：</p>
+                            <p>主持县人大常委会全面工作。</p>
+                        </div>
+                        <div class="info-item">
+                            <p class="labels">简介：</p>
+                            <p>男，1962年12月出生，籍贯浙江平湖<br>1982年8月参加工作，中共党员，中央党校大学学历。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-item-wrap">
+                <div class="left-item">
+                    <div class="zrzc-item">
+                        <div class="avator">
+                            <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/shiping.png" alt="">
+                        </div>
+                        <div class="info-wrap">
+                            <div class="name-depudy-wrap">
+                                <span class="name">殳世平</span><span class="depudy">副主任</span>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">分管工作：</p>
+                                <p>协助主任分管县人大常委会办公室（研究室）、代表与选举任免工作委员会。</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">简介：</p>
+                                <p>男，1962年12月出生，籍贯浙江嘉善<br>1984年8月参加工作，中共党员，大学学历。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-item">
+                    <div class="zrzc-item">
+                        <div class="avator">
+                            <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/hehuiqing.png" alt="">
+                        </div>
+                        <div class="info-wrap">
+                            <div class="name-depudy-wrap">
+                                <span class="name">何慧琴</span><span class="depudy">副主任</span>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">分管工作：</p>
+                                <p>协助主任分管县人大常委会教育科技文化卫生工作委员会。</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">简介：</p>
+                                <p>女，1964年2月出生，籍贯浙江诸暨<br>1984年8月参加工作，民建会员，大学学历。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-item-wrap">
+                <div class="left-item">
+                    <div class="zrzc-item">
+                        <div class="avator">
+                            <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/dingbinglong.png" alt="">
+                        </div>
+                        <div class="info-wrap">
+                            <div class="name-depudy-wrap">
+                                <span class="name">丁炳龙</span><span class="depudy">副主任</span>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">分管工作：</p>
+                                <p>协助主任分管县人大法制（内务司法）委员会（县人大常委会内务司法工作委员会）。</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">简介：</p>
+                                <p>男，1961年10月出生，籍贯浙江嘉善<br>1982年参加工作，中共党员，在职大专。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-item">
+                    <div class="zrzc-item">
+                        <div class="avator">
+                            <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/zhouxiafang.png" alt="">
+                        </div>
+                        <div class="info-wrap">
+                            <div class="name-depudy-wrap">
+                                <span class="name">邹霞芳</span><span class="depudy">副主任</span>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">分管工作：</p>
+                                <p>协助主任分管县人大常委会农业与农村工作委员会。</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">简介：</p>
+                                <p>女，1966年4月出生，籍贯浙江嘉善<br>1988年参加工作，中共党员，在职大学。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-item-wrap" style="border-bottom:none ;">
+                <div class="left-item">
+                    <div class="zrzc-item">
+                        <div class="avator">
+                            <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/shenhongwei.png" alt="">
+                        </div>
+                        <div class="info-wrap">
+                            <div class="name-depudy-wrap">
+                                <span class="name">沈宏伟</span><span class="depudy">副主任</span>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">分管工作：</p>
+                                <p>协助主任分管县人大常委会城乡建设与环境资源保护工作委员会。</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">简介：</p>
+                                <p>男，1964年12月出生，籍贯浙江嘉善<br>1985年8月参加工作，中共党员，中央党校大学学历。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-item">
+                    <div class="zrzc-item">
+                        <div class="avator">
+                            <img src="http://192.168.9.53/themes/jiashan_1/public/assets/images/zzm.jpg" alt="" style="width: 144px;height: 202px">
+                        </div>
+                        <div class="info-wrap">
+                            <div class="name-depudy-wrap">
+                                <span class="name">朱忠民</span><span class="depudy">副主任</span>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">分管工作：</p>
+                                <p>协助主任分管县人大常委会城乡建设与环境资源保护工作委员会。</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="labels">简介：</p>
+                                <p>男，1969年3月出生，籍贯浙江嘉善<br>1989年8月参加工作，中共党员，在职大学。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
