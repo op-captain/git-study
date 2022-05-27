@@ -13,6 +13,8 @@ function baseSlice(array,start,end){
         start = -start > length ? 0 : (length + start);
     }
 
+    end  = end > length ? length : end;
+
     var result = Array(length)
 
     while (++index < length){
